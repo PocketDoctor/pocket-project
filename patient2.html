@@ -10,16 +10,25 @@
 
   <head>
     <title> PocketDoctor </title> 
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+	<style>
+	body {
+        background-image: url("life2.jpg");
+	} 
+	</style>
+<ul align="right">
+                    <p>
+						<select name="Job" id="Job">
+						<option> -- Please Select -- </option>
+						<option> Home</option>
+						<option> Search for a professional</option>
+						<option> Chat with a professional</option>
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="main.css">
-
+						
+						</select>
+						
+					</p>
+                    </ul>
 	
     <script>
 			function showEntries() {
@@ -85,103 +94,71 @@
   </head>
 
   <body>
-  
-  
-	<div class="container-flex">
-        <div class="row">
-       		<h3>PocketDoctor</h3> 
-       </div>
-    	<div class ="row">
-    		<div class= "col-sm-4">
-    		
-    		<ul>
-    			
-    		<a href="https://google.com" target="_blank"><strong>Home</strong></a><br />
-    		</div>
-    	
-    		<div class="col-sm-4">
-    		<a href="https://google.com" target="_blank"><strong>Search for a professional</strong></a><br />
-    		</div>
-    		<div class="col-sm-4">
-    		<a href="https://pocket-doctor-369dd.firebaseapp.com" target="_blank"><strong>Chat with a professional</strong></a><br />
-    		</div>
-    		</ul>
-    		</div>
-    	</div>
-    
-						
-		</p>
+            
+            <!-- Menu bar (1 column three rows) and contact us section row (3 col and 3 rows) -->
+            
+            <tr bordercolor="red">
+            
+                <!-- Menu Bar -->
+                <td colspan=1 rowspan=3 width="25%" valign="top" bgcolor="darkgreen">
+                    <h2 align="center"><em><font color="white" size ="7" style = "font-family: apple chancery" >PocketDoctor </font></em></h2>
+                </td>
+            
+          
+                
+                <!-- Contact us -->
+                <td colspan=2 bgcolor="#F0F0F0"><br />
 		
-		
-                    
-		<div class = "row">
-			<h4> Patient Information </h4>
-		</div>
-		<div class = "row">
-			<p><h2> Hello! Please enter your information below. Fields starred with a <span class="asterisk">*</span> are required.</p></h2>
-		</div>
-		
-		<div class="row">
+	<h2 align="center"> <font color="white" size="7" style="font-family:optima;"> Patient Information  </font> </h2>
 
-			<div class = "col-sm-6">
-				<h2> <span class="asterisk">*</span> First Name: </h2>
-			</div>
-			<div class="col-sm-6">
-				<input  type="text" name="FirstName" id="FirstName" class="input" placeholder="Johnny"maxlength="60" required />
-			</div>
-		</div>
+	<body>
+	<p><h2 align="center"><font color="white" size="5">Please enter your information below. Fields starred with a <font color="red">*</font> are required.</font></p>
+	<form action="mailto:FKL1@pitt.edu?Subject=Form Data" method="post" enctype="text/plain">
 		
-			<h2><span class="asterisk">*</span> Last Name: </h2>
-			<div class="center">
-			<input type="text" name="LastName" id="LastName" class="input" placeholder="Appleseed"maxlength="60" required />
-			</div>
+			<h2 align="center"><font color="red">*</font> <font color ="white" size="5">First Name:</font>
+			<h2 align="center"><input type="text" name="FirstName" id="FirstName" size="30" placeholder="Johnny"maxlength="60" required />
 		
-			<h2><span class="asterisk">*</span> Email address: </h2>
-			<div class="center">
-			<input type="text" name="email" id="email" class="input" placeholder="address@email.com" maxlength="80" required />
-			</div>
 		
-			<h2> Phone Number: </h2>
-			<div class="center">
-			<input type="text" name="phone" id="phone" class="input" placeholder="XXX-555-5555" maxlength="60" />
-			</div>
-			<h2><span class="asterisk">*</span> Height: </h2>
-			<div class="center">
-			<input type="text" name="height" id="height" class="input" placeholder="Ex: 5ft 3in " maxlength="60" />
-			</div>
+			<h2 align="center"><font color="red">*</font> <font color="white" size="5">Last Name:</font>
+			<h2 align="center"><input type="text" name="LastName" id="LastName" size="30" placeholder="Appleseed"maxlength="60" required />
 		
-			<h2><span class="asterisk">*</span> Weight: </h2>
-			<div class="center">
-			<input type="text" name="weight" id="weight" class="input" placeholder="Ex: 120lbs" maxlength="60" />
-			</div>
+		
+			<h2 align="center"><font color="red">*</font> <font color="white" size = "5"> Email address: </font>
+			<h2 align="center"><input type="text" name="email" id="email" size="30" placeholder="address@email.com" maxlength="80" required />
+		
+		
+			<h2 align="center"><font color="red">*</font> <font color="white" size = "5"> Phone Number: </font> 
+			<h2 align="center"><input type="text" name="phone" id="phone" size="30" placeholder="XXX-555-5555" maxlength="60" />
+		
+			<h2 align="center"><font color="red">*</font> <font color="white" size = "5">Height: </font>
+			<h2 align="center"><input type="text" name="height" id="height" size="30" placeholder="Ex: 5ft 3in " maxlength="60" />
+		
+		
+			<h2 align="center"><font color="red">*</font> <font color="white" size = "5"> Weight: </font>
+			<h2 align="center"><input type="text" name="weight" id="weight" size="30" placeholder="Ex: 120lbs" maxlength="60" />
+		
 
-			<h2><span class="asterisk">*</span>  Date of Birth: </h2>
-			<div class="center">
-			<input type="text" name="phone" id="phone" class="input" placeholder="dd/mm/yy " maxlength="60" />
-			</div>
+			<h2 align="center"><font color="red">*</font> <font color="white" size = "5"> Date of Birth: </font>
+			<h2 align="center"><input type="text" name="phone" id="phone" size="30" placeholder="dd/mm/yy " maxlength="60" />
 		<p>
 		
-		<h2><span class="asterisk">*</span> What are your fitness/health goals? <br/></h2> 
-		<div class="center"> 
-			<textarea rows="10" cols="70" name="expand" id="expand" placeholder="Enter your goals here..." wrap=hard></textarea>
-		</div>
-	
+		<font color="red">*</font> <font color="white" size="5">What are your fitness/health goals?</font> <br /><textarea rows="10" cols="70" name="expand" id="expand" placeholder="Enter your goals here..." wrap=hard></textarea>
+		
 		
 		<p>
 				<!-- submit and reset buttons -->
-				<div class="center">
 				<input type="submit" onclick="showEntries()" value="Submit"> 
 				<input type="reset" value="Reset form"> 
-				</div>
 		</p>
-	</div>
 
 	</form>
 	<!-- form validation- display results of submission -->
-	
+	</body>
 	<footer>
 
 </footer>
-
+</td>
+</tr>
+</table>
 </body>
 </html>
