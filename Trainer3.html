@@ -1,0 +1,202 @@
+<!-- TEAM WEB PAGE ASSIGNMENT-CONTACT US
+     MAHBOOBIN 10-12, GROUP L08
+	 GROUP MEMBERS: Aaron Paczak, Christian Mazur, Stephanie Viscovich
+	 CREATED BY: GROUP L08 11/25/2014
+	 LAST UPDATE: Stephanie Viscovich 12/1/2014
+
+-->
+
+<html>
+
+  <head>
+    <title> PocketDoctor </title> 
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+	
+    <script>
+			function showEntries() {
+				//get Elements by ID
+				var i=0;
+				
+				var w = document.getElementsByName("Why");
+					if (w[0].checked == true) {
+						document.getElementById("span0").innerHTML = w[0].value;
+					}
+					else if (w[1].checked ==true) {
+						document.getElementById("span0").innerHTML = w[1].value;
+					}
+					else {
+						document.getElementById("span0").innerHTML = w[2].value;
+					}
+				
+				var first = document.getElementById("FirstName");
+					document.getElementById("span1").innerHTML = first.value;
+				var last = document.getElementById("LastName");
+					document.getElementById("span2").innerHTML = last.value;
+				var email = document.getElementById("email");
+					document.getElementById("span3").innerHTML = email.value;
+				var phone = document.getElementById("phone");
+					document.getElementById("span4").innerHTML = phone.value;
+				var type = document.getElementById("Job");
+					document.getElementById("span6").innerHTML = type.value;
+				
+				var other = document.getElementById("specify");
+					if (type.value == "Other...") {
+						document.getElementById("span7").innerHTML = other.value;
+					}
+					else {
+						document.getElementById("span7").innerHTML = "n/a";
+					}
+				var expand = document.getElementById("expand");
+					document.getElementById("span8").innerHTML = expand.value;
+					
+				// checkboxes 
+			var B = document.getElementsByName("interests");
+			if (B[0].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[0].value;
+				}
+			if (B[1].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[1].value;
+				}
+			if (B[2].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[2].value;
+				}
+			if (B[3].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[3].value;
+				}
+			if (B[4].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[4].value;
+				}
+			if (B[5].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[5].value;
+				}
+			
+		}
+		</script>
+	
+  </head>
+
+  <body>
+  
+  
+	<div class="container-flex">
+        <div class="row">
+       		<h3>PocketDoctor</h3> 
+       </div>
+    	
+    
+						
+		</p>
+		
+		
+                    
+		<div class = "row">
+			<h4> Trainer Information </h4>
+		</div>
+		<div class = "row">
+			<p><h5> Hello! Please enter your information below. Fields starred with a <span class="asterisk">*</span> are required.</p></h5>
+		</div>
+		
+		<div class="row fieldcontainer">
+
+			<div class = "col-sm-6">
+				
+				<h2> <span class="asterisk">*</span> First Name: </h2>
+				
+			</div>
+			<div class="col-sm-6">
+				
+				<input  type="text" name="FirstName" id="FirstName" class="input" placeholder="Johnny"maxlength="60" required />
+				
+			</div>
+		</div>
+		<div class="row fieldcontainer">
+			<div class="col-sm-6">
+				<h2><span class="asterisk">*</span> Last Name: </h2>
+			</div>
+			<div class="col-sm-6">
+				<input type="text" name="LastName" id="LastName" class="input" placeholder="Appleseed"maxlength="60" required />
+			</div>
+		</div>
+		<div class="row fieldcontainer">
+			<div class="col-sm-6">
+				<h2><span class="asterisk">*</span> Email address: </h2>
+			</div>
+			<div class="col-sm-6">
+				<input type="text" name="email" id="email" class="input" placeholder="address@email.com" maxlength="80" required />
+			</div>
+		</div>
+		<div class ="row fieldcontainer ">
+			<div class = "col-sm-6">
+				<h2> Phone Number: </h2>
+			</div>
+			<div class="col-sm-6">
+				<input type="text" name="phone" id="phone" class="input" placeholder="XXX-555-5555" maxlength="60" />
+			</div>
+		</div>
+		<div class = "row fieldcontainer">
+			<div class = "col-sm-6">
+				<h2><span class="asterisk">*</span> Experience </h2>
+			</div>
+			<div class="col-sm-6">
+					<textarea rows="10" cols="70" name="expand" id="expand" placeholder="Enter your work experience here..." wrap=hard></textarea>
+			</div>
+		</div>
+		<!--
+		<div class="row fieldcontainer">
+			<div class="col-sm-6">
+				<h2><span class="asterisk">*</span> Weight: </h2>
+			</div>
+			<div class="col-sm-6">
+				<input type="text" name="weight" id="weight" class="input" placeholder="Ex: 120lbs" maxlength="60" />
+			</div>
+		</div>
+		<div class = "row fieldcontainer">
+			<div class="col-sm-6">
+				
+				<h2><span class="asterisk">*</span>  Date of Birth: </h2>
+				
+			</div>
+			<div class="col-sm-6">
+				<div class = left>
+					<input type="text" name="phone" id="phone" class="input" placeholder="dd/mm/yy " maxlength="60" />
+				</div>
+			</div>
+		</div>
+		<p>
+		-->
+		<div class = "row fieldcontainer">
+			<div class="col-sm-6">
+				<h2><span class="asterisk">*</span> Specializations? <br/></h2> 
+			</div>
+			<div class="col-sm-6">
+				<textarea rows="10" cols="70" name="expand" id="expand" placeholder="Do you specialize in anything..." wrap=hard></textarea>
+			</div>
+		</div>
+		
+		<p>
+				<!-- submit and reset buttons -->
+				<div class="center">
+				<input type="submit" onclick="showEntries()" value="Submit"> 
+				<input type="reset" value="Reset form"> 
+				</div>
+		</p>
+	</div>
+
+	</form>
+	<!-- form validation- display results of submission -->
+	
+	<footer>
+
+</footer>
+
+</body>
+</html>

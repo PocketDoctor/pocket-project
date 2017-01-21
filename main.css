@@ -1,21 +1,28 @@
 body {
         background-image: url("life2.jpg");
 	} 
-	/* h2 { text-align: center; 
+	 h2 { text-align: right; 
 		 color: white;
 		 font-size: 30px;
+		 margin: 0;
 		}	
 	.asterisk {
 		color: red;
+		
 	}
+	/*
 	.input {
 		font-size: 30px;
 		text-align: center;
-	}
+	} */
 	.center {
 		text-align: center;
 	}
-	ul {
+	.left{
+		text-align: left;
+	}
+	
+	/*ul {
 	text-align: left;
 	color: white;	
 	font-size: 15px;
@@ -26,14 +33,23 @@ body {
 	font-size: 60px;
 	font-family: "apple chancery";
 	}
-	/*h4 {
+	
+	h4 {
 		text-align: center;
 		color: white;
 		font-size: 45px;
 		font-family: "optima";
 	}
+	h5 {
+		text-align: center;
+		color: white;
+		font-size: 30px;
+	}
+	.fieldcontainer {
+		margin-top: 20px;
+	}
 	
-	.menu {
+	/*.menu {
 		position: absolute;
 		top: 0;
 		left: 20;
