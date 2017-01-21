@@ -1,0 +1,55 @@
+
+<!--
+File created by Katrina Haidari on 1/21/2017
+File created using WordPad for PC
+
+Purpose of file: show the RDs using this website 
+-->
+<html>
+	<h2 align="center"> <font color="blue"> Search for a Dietician </h2>
+	<body>
+		<!-- list of dieticians -->
+		<ol>
+		<li> <b> Ariana </b> <br /> <br />
+	Ariana Haidari is a Registered Dietician based in Tacoma, Washington. She has a bachelor's degree from the University of Deleware, and completed her Dietetic Internship with Cornell University. She currents works at a WIC clinic, and can speak fluent English and Spanish.<br />
+		<img src="http://prod-http-80-800498448.us-east-1.elb.amazonaws.com/w/images/thumb/9/94/Chevron-logo.png/200px-Chevron-logo.png" height=100 width=100>
+		</li>
+			<!-- unordered list of the products and services of Chevron. logo included. -->
+			<ul>
+			<li> Products </li>
+				<ul>
+				<li> Petrochemical products </li>
+				<li> Transportation fuels and lubricants </li>
+				</ul>
+			</ul>
+			<ul>
+			<li> Services </li>
+				<ul>
+				<li> research into advanced biofuels </li>
+				<li> renewable energy </li>
+				</ul>
+			</ul> <br />
+		<li> <b> Dow Chemical Company </b> <br /> <br />
+		Dow was founded in 1897 by Herbert Henry Dow. At first Dow's only products were only bleach and potassium bromide. Over the years though, Dow expanded its market and went through several mergers and purchases to become the company that they are today. Currently, they are the third largest chemical company, and employ over 54,000 people. Their main products are performance plastics and chemicals. <br />
+Dow is a chemical company with a focus on sustainability. They deal with issues such as clean water, renewable energy generation and increased agricultural productivity. Dow is a very successful company, with annual sales of over $57 billion. The company is also a very global company, as the 5000 products that the company produces are sold in over 160 countries. salary can vary depending on position and experience. <br />
+		<img src="https://groups.cob.ohio-state.edu/boms/files/DOW-logo.jpg" height=100 width=100>
+		</li>
+			<!-- unordered list of products and services of Dow. logo included -->
+			<ul>
+			<li> Products </li>
+				<ul>
+				<li> performance chemicals </li>
+				<li> chemically advanced plastics </li>
+				</ul>
+			</ul>
+			<ul>
+			<li> Services </li>
+				<ul>
+				<li> renewable energy </li>
+				<li> clean water </li>
+				</ul>
+			</ul>
+		</ol>
+	</body>
+</html>
+	

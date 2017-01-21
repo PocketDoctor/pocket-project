@@ -1,0 +1,9 @@
+<td align="center"><a href="http://www.pitt.edu/~aap77/" target="_blank"><img src="images/aaron.png" height="150" width="150" /> </a></td>
+            <td align="center"><a href="http://www.pitt.edu/~snv10/" target="_blank"><img src="images/steph.jpg" height="150" width="150"/></a></td>
+             <td align="center"><a href="http://www.pitt.edu/~cjm154/" target="_blank"><img src="images/christian.jpg"height="150" width="150" /></a></td>
+               </tr>
+                <tr>
+         <font color="violet">
+       <td align="center"><a href="mailto:aap77@pitt.edu"> <em>Aaron Paczak</em> </a></td>
+       <td align="center"><a href="mailto:snv10@pitt.edu"> <em>Stephanie Viscovich</em> </a></td>
+     <td align="center"><a href="mailto:cjm154@pitt.edu"> <em>Christian Mazur</em> </a></td>

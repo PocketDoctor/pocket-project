@@ -1,0 +1,49 @@
+
+<!--
+File created by Katrina Haidari on 1/21/2017
+File created using WordPad for PC
+
+Purpose of file: show the RDs using this website 
+-->
+<html>
+<title>Dietician Search Page</title>
+	<h2 align="center"> <font color="blue"> Search for a Dietician </h2>
+	<body>
+	<input type="text" name="search" placeholder="Search..">
+	
+		<!-- list of dieticians -->
+	<p><img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/1/005/04a/306/3f9aab9.jpg" height=100 width=100 align=middle>
+	<a href="http://www.arianahaidari.com" target="_blank">
+	<b> Ariana Haidari</b> </a>
+	<p>
+	Ariana Haidari is a Registered Dietician based in Tacoma, Washington. She has a bachelor's degree from the University of Delaware, and completed her Dietetic Internship with Cornell University. She currents works at a WIC clinic, and can speak fluent English and Spanish.<br />
+	
+	<p><img src="http://eatrightpittsburgh.org/wp-content/uploads/2016/10/Caroline-Passerrello-150x164.jpg" height=100 width=100 align=middle>
+	<a href="http://www.carolinewestllc.com/" target="_blank">	
+	<b> Caroline West </b> </a>
+		<p>
+		Caroline West is the Owner of Caroline West, LLC whose mission is to provide quality, comprehensive, and strategic, and strategic nutrition and fitness services. She is located in Pittsburgh, Pensylvannia, where she is also an adjunct professor at the University of Pittsburgh.
+		
+	</body>
+	<script>
+function search() {
+ 
+   var name = document.getElementById("searchForm").elements["searchItem"].value;
+   console.log(name);
+   var pattern = name.toLowerCase();
+   var targetId = "";
+ 
+   var divs = document.getElementsByClassName("col-md-2");
+   for (var i = 0; i < divs.length; i++) {
+      var para = divs[i].getElementsByTagName("p");
+      var index = para[0].innerText.toLowerCase().indexOf(pattern);
+      if (index != -1) {
+         targetId = divs[i].parentNode.id;
+         document.getElementById(targetId).scrollIntoView();
+         break;
+      }
+   }  
+}
+</script>
+</html>
+	
