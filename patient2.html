@@ -91,23 +91,7 @@
         <div class="row">
        		<h3>PocketDoctor</h3> 
        </div>
-    	<div class ="row">
-    		<div class= "col-sm-4">
-    		
-    		<ul>
-    			
-    		<a href="https://google.com" target="_blank"><strong>Home</strong></a><br />
-    		</div>
     	
-    		<div class="col-sm-4">
-    		<a href="https://google.com" target="_blank"><strong>Search for a professional</strong></a><br />
-    		</div>
-    		<div class="col-sm-4">
-    		<a href="https://pocket-doctor-369dd.firebaseapp.com" target="_blank"><strong>Chat with a professional</strong></a><br />
-    		</div>
-    		</ul>
-    		</div>
-    	</div>
     
 						
 		</p>
@@ -118,54 +102,83 @@
 			<h4> Patient Information </h4>
 		</div>
 		<div class = "row">
-			<p><h2> Hello! Please enter your information below. Fields starred with a <span class="asterisk">*</span> are required.</p></h2>
+			<p><h5> Hello! Please enter your information below. Fields starred with a <span class="asterisk">*</span> are required.</p></h5>
 		</div>
 		
-		<div class="row">
+		<div class="row fieldcontainer">
 
 			<div class = "col-sm-6">
+				
 				<h2> <span class="asterisk">*</span> First Name: </h2>
+				
 			</div>
 			<div class="col-sm-6">
+				
 				<input  type="text" name="FirstName" id="FirstName" class="input" placeholder="Johnny"maxlength="60" required />
+				
 			</div>
 		</div>
-		
-			<h2><span class="asterisk">*</span> Last Name: </h2>
-			<div class="center">
-			<input type="text" name="LastName" id="LastName" class="input" placeholder="Appleseed"maxlength="60" required />
+		<div class="row fieldcontainer">
+			<div class="col-sm-6">
+				<h2><span class="asterisk">*</span> Last Name: </h2>
 			</div>
-		
-			<h2><span class="asterisk">*</span> Email address: </h2>
-			<div class="center">
-			<input type="text" name="email" id="email" class="input" placeholder="address@email.com" maxlength="80" required />
+			<div class="col-sm-6">
+				<input type="text" name="LastName" id="LastName" class="input" placeholder="Appleseed"maxlength="60" required />
 			</div>
-		
-			<h2> Phone Number: </h2>
-			<div class="center">
-			<input type="text" name="phone" id="phone" class="input" placeholder="XXX-555-5555" maxlength="60" />
+		</div>
+		<div class="row fieldcontainer">
+			<div class="col-sm-6">
+				<h2><span class="asterisk">*</span> Email address: </h2>
 			</div>
-			<h2><span class="asterisk">*</span> Height: </h2>
-			<div class="center">
-			<input type="text" name="height" id="height" class="input" placeholder="Ex: 5ft 3in " maxlength="60" />
+			<div class="col-sm-6">
+				<input type="text" name="email" id="email" class="input" placeholder="address@email.com" maxlength="80" required />
 			</div>
-		
-			<h2><span class="asterisk">*</span> Weight: </h2>
-			<div class="center">
-			<input type="text" name="weight" id="weight" class="input" placeholder="Ex: 120lbs" maxlength="60" />
+		</div>
+		<div class ="row fieldcontainer ">
+			<div class = "col-sm-6">
+				<h2> Phone Number: </h2>
 			</div>
-
-			<h2><span class="asterisk">*</span>  Date of Birth: </h2>
-			<div class="center">
-			<input type="text" name="phone" id="phone" class="input" placeholder="dd/mm/yy " maxlength="60" />
+			<div class="col-sm-6">
+				<input type="text" name="phone" id="phone" class="input" placeholder="XXX-555-5555" maxlength="60" />
 			</div>
+		</div>
+		<div class = "row fieldcontainer">
+			<div class = "col-sm-6">
+				<h2><span class="asterisk">*</span> Height: </h2>
+			</div>
+			<div class="col-sm-6">
+				<input type="text" name="height" id="height" class="input" placeholder="Ex: 5ft 3in " maxlength="60" />
+			</div>
+		</div>
+		<div class="row fieldcontainer">
+			<div class="col-sm-6">
+				<h2><span class="asterisk">*</span> Weight: </h2>
+			</div>
+			<div class="col-sm-6">
+				<input type="text" name="weight" id="weight" class="input" placeholder="Ex: 120lbs" maxlength="60" />
+			</div>
+		</div>
+		<div class = "row fieldcontainer">
+			<div class="col-sm-6">
+				
+				<h2><span class="asterisk">*</span>  Date of Birth: </h2>
+				
+			</div>
+			<div class="col-sm-6">
+				<div class = left>
+					<input type="text" name="phone" id="phone" class="input" placeholder="dd/mm/yy " maxlength="60" />
+				</div>
+			</div>
+		</div>
 		<p>
-		
-		<h2><span class="asterisk">*</span> What are your fitness/health goals? <br/></h2> 
-		<div class="center"> 
-			<textarea rows="10" cols="70" name="expand" id="expand" placeholder="Enter your goals here..." wrap=hard></textarea>
+		<div class = "row fieldcontainer">
+			<div class="col-sm-6">
+				<h2><span class="asterisk">*</span> What are your fitness/health goals? <br/></h2> 
+			</div>
+			<div class="col-sm-6">
+				<textarea rows="10" cols="70" name="expand" id="expand" placeholder="Enter your goals here..." wrap=hard></textarea>
+			</div>
 		</div>
-	
 		
 		<p>
 				<!-- submit and reset buttons -->
