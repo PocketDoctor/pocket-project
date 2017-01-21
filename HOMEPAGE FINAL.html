@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> The Pocket Doctor </title>
+    <style>
+    body {
+	background-image: url(file:///Users/fransiscalarasati/Documents/POCKETDOCTOR/FITNESS.jpg);
+    }
+    </style>
+    <script>
+
+			function showEntries() {
+				//get Elements by ID
+				var i=0;
+				
+				var w = document.getElementsByName("Why");
+					if (w[0].checked == true) {
+						document.getElementById("span0").innerHTML = w[0].value;
+					}
+					else if (w[1].checked ==true) {
+						document.getElementById("span0").innerHTML = w[1].value;
+					}
+					else {
+						document.getElementById("span0").innerHTML = w[2].value;
+					}
+				
+				var first = document.getElementById("FirstName");
+					document.getElementById("span1").innerHTML = first.value;
+				var last = document.getElementById("LastName");
+					document.getElementById("span2").innerHTML = last.value;
+				var email = document.getElementById("email");
+					document.getElementById("span3").innerHTML = email.value;
+				var phone = document.getElementById("phone");
+					document.getElementById("span4").innerHTML = phone.value;
+				var type = document.getElementById("Job");
+					document.getElementById("span6").innerHTML = type.value;
+				
+				var other = document.getElementById("specify");
+					if (type.value == "Other...") {
+						document.getElementById("span7").innerHTML = other.value;
+					}
+					else {
+						document.getElementById("span7").innerHTML = "n/a";
+					}
+				var expand = document.getElementById("expand");
+					document.getElementById("span8").innerHTML = expand.value;
+					
+				// checkboxes 
+			var B = document.getElementsByName("interests");
+			if (B[0].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[0].value;
+				}
+			if (B[1].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[1].value;
+				}
+			if (B[2].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[2].value;
+				}
+			if (B[3].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[3].value;
+				}
+			if (B[4].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[4].value;
+				}
+			if (B[5].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[5].value;
+				}
+			
+		}
+		</script>
+	
+  </head>
+
+  <body>
+
+    <!-- Main table -->
+    <table width="100%" height="100%"  bordercolor=“white”>
+		<p align="right">
+			<select name="Job" id="Job">
+				<option> -- Please Select -- </option>
+				<option> Home</option>
+				<option> Search for a professional</option>
+				<option> Chat with a professional </option>
+				<option> School</option>
+				<option> Other...</option>
+			</select>
+		</p>
+      <!-- header nested table -->
+        <!-- <td> -->
+<!--           <table align="center" valign="middle" width="100%" height="100%"  border=2 bordercolor = "green" > -->
+            <!-- <tr border=2> -->
+<font size="7" color=black style= "font-family:apple chancery" face="script">PocketDoctor</font></td>               
+ 
+ <table >
+                  <!-- 
+<tr height="15%" width="100%">
+                    <td  align ="center" valign="middle" ><font size=7 color="white" face="algerian"> <span style="font-size:72pt"> We-Luminati </span><font></font></td>
+                  </tr>
+
+                  <tr height="10%" width="100%">
+                    <td align ="center" valign="bottom" ><em><font size=2 color="white">Spreading the holiday spirit since 2010.</font></em></td>
+                  </tr>
+ -->
+               <!--  </table> -->
+ 
+
+              <!-- <td width="10" align ="center" valign="middle"><img src="images/welum.png" height=225 width=180 /></td> -->
+            </tr>
+        <!-- </td> -->
+      </tr>
+            
+            <!-- Menu bar (1 column three rows) and contact us section row (3 col and 3 rows) -->
+            
+            <tr bordercolor="blue">
+            
+                <!-- Menu Bar -->
+                <!-- 
+<td colspan=1 rowspan=3 width="25%" valign="top" bgcolor=“white”>
+                	
+                                    
+                    <ul align="left">
+                    <font color="green">
+                       <li><a href="http://www.pitt.edu/~aap77/public/html/teamwebpage.html" target="_blank"><strong>Main Page</strong></a></li><br />
+                        <li><a href="http://www.pitt.edu/~cjm154/mission.html" target="_blank"><strong>Company Mission</strong></a></li><br />
+                        <li><a href="http://www.pitt.edu/~aap77/product.html" target="_blank"><strong>Product Info</strong></a></li><br />
+                        <li><a href="http://www.pitt.edu/~cjm154/prices.html" target="_blank"><strong>Prices</strong></a></li><br />
+                        <li><a href="http://www.pitt.edu/~snv10/something.html" target="_blank"><strong>Photo Gallery</strong></a></li><br />
+                        <li><a href="http://www.pitt.edu/~snv10/contactus.html" target="_blank"><strong>Contact Us</strong></a></li><br />
+                    </font>
+                    </ul>
+                    
+                </td>
+ -->
+            
+          </table>
+                
+                <!-- Contact us -->
+                <td colspan=2 bgcolor="#F0F0F0"><br />
+
+<!--FIRST NAME, ETC
+<h2 align="center"> <font color="blue" size= "+10" style="font-family:impact;"> Patient Information  </font> </h2> —>
+	
+
+	<body align = "center">
+	<p><font color="cadetblue" size="+1">Please enter your information. Fields marked with a  <font color="red">*</font> are required.</font></p>
+	<form action="mailto:cjm154@pitt.edu?Subject=Form Data" method="post" enctype="text/plain">
+		<!-- 
+<p>
+			<font color="red">*</font>What is your reason for contacting us today?<br />
+			<input type="radio" name="Why" id="Why11" value="Business inquiry or price estimate" /> Business inquiry or price estimate<br />
+			<input type="radio" name="Why" id="Why12" value="General questions or comments" /> General questions or comments<br />
+			<input type="radio" name="Why" id="Why13" value="Customer support and troubleshooting" /> Customer support and troubleshooting <br />
+		</p>
+ -->
+<body align=center> 
+<h2 align="center"> <font color=“white” size= "7" style="font-family:optima;"> Select one that applies:  </font> </h2>
+<br></br>
+<a href=file:///Users/fransiscalarasati/Documents/POCKETDOCTOR/patient2.html>
+<img src=file:///Users/fransiscalarasati/Documents/POCKETDOCTOR/PATIENT.png alt=Patient style=“width:50px;height:100px;”>
+<br></br>
+<a href=file:///Users/fransiscalarasati/Documents/POCKETDOCTOR/DIETITIAN.html>
+<img src=file:///Users/fransiscalarasati/Documents/POCKETDOCTOR/DIETITIAN.png alt=Dietitian style=“width:50px;height:100px;”>
+<br></br>
+<a href=file:///Users/fransiscalarasati/Documents/POCKETDOCTOR/Trainer1.html>
+<img src=file:///Users/fransiscalarasati/Documents/POCKETDOCTOR/TRAINER.png alt=Trainer style=“width:50px;height:100px;”>
+</a>
+</p>
+</body>
+
+		
+
+	</form>
+	<!-- form validation- display results of submission -->
+	<!-- 
+<h2> Results of your Submission: </h2>
+		<p> For "What is your reason for contacting us today?" you said: <span id="span0"> </span> </p>
+		<p> First Name: <span id="span1"> </span> </p>
+		<p> Last Name: <span id="span2"> </span> </p>
+		<p> Email: <span id="span3"> </span> </p>
+		<p> Telephone: <span id="span4"> </span> </p>
+		<p> How did you hear about us? <span id="c1"> </span> </p>
+		<p> Type of job you are inquiring about: <span id="span6"> </span> </p>
+		<p> If you chose "other", the type of job you are inquiring about is: <span id="span7"> </span> </p>
+		<p> Expansion of your submission: <span id="span8"> </span> </p>
+	</body>
+ -->
+	<footer>
+  <p align="center"><font size=-1 color="6B6B6B">We-Luminati Lights, Inc. &copy;2014<br />
+  Stephanie Viscovich, Aaron Pakzack, Christian Mazur, CEOs</font></p>
+</footer>
+</td>
+</tr>
+</table>
+</body>
+</html>
