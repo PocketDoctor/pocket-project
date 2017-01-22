@@ -7,46 +7,38 @@ body {
 	background-image: url("FITNESS.jpg");
     }
  </style>
- <script>
-  // checkboxes 
-			var B = document.getElementsByName("interests");
-			if (B[0].checked == true) {
-				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[0].value;
-				}
-			if (B[1].checked == true) {
-				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[1].value;
-				}
-			if (B[2].checked == true) {
-				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[2].value;
-				}
-			if (B[3].checked == true) {
-				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[3].value;
-				}
-			if (B[4].checked == true) {
-				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[4].value;
-				}
-			if (B[5].checked == true) {
-				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[5].value;
-				}
-			
-		}
-		</script>
+  
 <body>
 <p>
 <b>Welcome Back, Please Choose your Account Type:</b>
 <p>
-			<br />
-				<input type="checkbox" name="interests" id="online" value="Online" /> Forum or blog<br />
-				<input type="checkbox" name="interests" id="WOM" value="WOM" /> Word of Mouth<br />
-				<input type="checkbox" name="interests" id="news" value="news" /> Newspaper Ad<br />
-				<input type="checkbox" name="interests" id="TV" value="TV"  /> Television Ad<br />
-				<input type="checkbox" name="interests" id="social" value="Social" /> Social Network<br />
-				<input type="checkbox" name="interests" id="event" value="Search Engine" /> Search Engine<br />
-<a href="https://pocket-doctor-369dd.firebaseapp.com/" target="_blank"> Chat with your Dietician </a>
+<br />
+	<input type="checkbox" name="usertype" id="Patient" value="Patient" /> Patient<br />
+	<input type="checkbox" name="usertype" id="Dietitian" value="Dietitian" /> Dietitian<br />
+	<input type="checkbox" name="usertype" id="Trainer" value="Trainer" /> Trainer<br />
+
 <p>
-<a href="https://pocket-doctor-369dd.firebaseapp.com/" target="_blank"> Chat with your Personal Trainer </a>
-<p>
-<a href="stats" target="_blank"> View your progress </a>
+	Please Enter your email and password:
+<p><font color="blue">*</font>Email:
+	<input type="text" name="email" id="email" size="30" placeholder="email@example.com"maxlength="60" required />
+<p><font color="blue">*</font>Password:
+			<input type="password" name="password" id="password" size="30" placeholder="password"maxlength="60" required />
+	<script>
+			var link ;
+			if (B[0].checked == true) {
+				link = patient.html
+				}
+			if (B[1].checked == true) {
+				link = dietitian.html		
+				}
+			if (B[2].checked == true) {
+				link = trainer.html						
+		}
+	</script>
+	<a href=link target="_blank">	
+	<input type="button" value="Submit">
+	</a>
+	
 
 
 
