@@ -22,7 +22,7 @@ body {
 <p>*Email:
 	<input type="text" name="email" id="email" size="30" placeholder="email@example.com"maxlength="60" required />
 <p>*Password:
-			<input type="password" name="password" id="password" size="30" placeholder="password"maxlength="60" required />
+	<input type="password" name="password" id="password" size="30" placeholder="password"maxlength="60" required />
 	
 	
 	<p>Please Choose your Account Type:
@@ -36,12 +36,15 @@ body {
 	<script type="text/javascript">
 		function myFunction(){
 			if (box[0].checked == true) {
+				console.log('test1')
 				location.href="https://www.google.com/"
 				}
 			else if (box[1].checked == true) {
+				console.log('test2')
 				location.href="DIETITIANPROF.html"
 				}
 			else if (box[2].checked == true) {
+				console.log('test3')
 				location.href="TrainerProfile.html"	
 			}
 		}
