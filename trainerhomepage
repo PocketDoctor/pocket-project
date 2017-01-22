@@ -1,0 +1,19 @@
+<!-- homepage for trainers -->
+
+<html>
+<title> Home </title>
+
+<h2 align = "center"> <font color = "blue"> Welcome to your Pocket Doctor! </h2>
+<body>
+
+<p>
+<b>What would you like to do?</b>
+<p>
+<a href="https://pocket-doctor-369dd.firebaseapp.com/" target="_blank"> Chat with your Patients </a>
+<p>
+<a href="TrainerProfile.html" target="_blank"> View your profile </a>
+
+
+
+</html>
+
