@@ -29,20 +29,20 @@ body {
 	} */
 	h3 {
 	text-align: center;
-	color: white;
+	color: black;
 	font-size: 60px;
 	font-family: "apple chancery";
 	}
 	
 	h4 {
 		text-align: center;
-		color: white;
+		color: black;
 		font-size: 45px;
 		font-family: "optima";
 	}
 	h5 {
 		text-align: center;
-		color: white;
+		color: black;
 		font-size: 30px;
 	}
 	.fieldcontainer {
