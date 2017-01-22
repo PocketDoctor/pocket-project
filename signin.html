@@ -33,6 +33,9 @@ body {
 	<input type="radio" name="usertype" id="Trainer" value="Trainer" /> Trainer<br />
 
 	<script>
+		$("div").mousedown(function(){
+    		$(this).after("Mouse button pressed down.");
+		});
 			var link = "";
 			var num = 0; 
 			var box = document.getElementsByName("usertype") ;
