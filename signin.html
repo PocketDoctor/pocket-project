@@ -24,18 +24,19 @@ body {
 <p><font color="blue">*</font>Password:
 			<input type="password" name="password" id="password" size="30" placeholder="password"maxlength="60" required />
 	<script>
-			var link ;
-			if (B[0].checked == true) {
+			var link = "";
+			var box = document.getElementsByName("usertype") ;
+			if (box[0].checked == true) {
 				link = "patient home page.html"
 				}
-			if (B[1].checked == true) {
+			if (box[1].checked == true) {
 				link = "DIETITIANPROF.html"		
 				}
-			if (B[2].checked == true) {
+			if (box[2].checked == true) {
 				link = "TrainerProfile.html"						
 		}
 	</script>
-	<a href=link target="_blank">	
+	<a href= '" + link + "' target="_blank">	
 	<input type="button" value="Submit">
 	</a>
 	
