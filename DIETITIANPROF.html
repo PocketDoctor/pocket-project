@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> The Pocket Doctor </title>
+    <style>
+    body {
+	background-image: url(file:///Users/fransiscalarasati/Documents/POCKETDOCTOR/food.jpg);
+    }
+    </style>
+    <script>
+			function showEntries() {
+				//get Elements by ID
+				var i=0;
+				
+				var w = document.getElementsByName("Why");
+					if (w[0].checked == true) {
+						document.getElementById("span0").innerHTML = w[0].value;
+					}
+					else if (w[1].checked ==true) {
+						document.getElementById("span0").innerHTML = w[1].value;
+					}
+					else {
+						document.getElementById("span0").innerHTML = w[2].value;
+					}
+				
+				var first = document.getElementById("FirstName");
+					document.getElementById("span1").innerHTML = first.value;
+				var last = document.getElementById("LastName");
+					document.getElementById("span2").innerHTML = last.value;
+				var email = document.getElementById("email");
+					document.getElementById("span3").innerHTML = email.value;
+				var phone = document.getElementById("phone");
+					document.getElementById("span4").innerHTML = phone.value;
+				var type = document.getElementById("Job");
+					document.getElementById("span6").innerHTML = type.value;
+				
+				var other = document.getElementById("specify");
+					if (type.value == "Other...") {
+						document.getElementById("span7").innerHTML = other.value;
+					}
+					else {
+						document.getElementById("span7").innerHTML = "n/a";
+					}
+				var expand = document.getElementById("expand");
+					document.getElementById("span8").innerHTML = expand.value;
+					
+				// checkboxes 
+			var B = document.getElementsByName("interests");
+			if (B[0].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[0].value;
+				}
+			if (B[1].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[1].value;
+				}
+			if (B[2].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[2].value;
+				}
+			if (B[3].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[3].value;
+				}
+			if (B[4].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[4].value;
+				}
+			if (B[5].checked == true) {
+				document.getElementById("c1").innerHTML = document.getElementById("c1").innerHTML + " " + B[5].value;
+				}
+			
+		}
+		</script>
+	
+  </head>
+
+  <body>
+
+    <!-- Main table -->
+
+    <table width="100%" height="100%"  bordercolor=white>
+
+                <!-- Contact us -->
+		<p align="right">
+			<select name="Job" id="Job">
+				<option> -- Please Select -- </option>
+				<option> Home</option>
+				<option> Chat with a patient</option>
+			</select>
+		</p>
+ 
+<font size="7" color=white style= "font-family:apple chancery" face="script">PocketDoctor</font>      
+                            
+ 
+ <table >
+                 
+            </tr>
+
+      </tr>
+            
+            <!-- Menu bar (1 column three rows) and contact us section row (3 col and 3 rows) -->
+            
+            <tr bordercolor=“white”>
+            
+ 
+            
+          </table>
+                
+	<h2 align="center"> <font color=white size= "7" style="font-family:optima;"> Dietitian Information  </font> </h2>
+	
+
+	<body align = "center">
+	<p><font color=white size="+1"> <font size="5"> Welcome to PocketDoctor, is your profile:</font></p>
+	<form action="mailto:cjm154@pitt.edu?Subject=Form Data" method="post" enctype="text/plain">
+<p>
+  <ul style=list-style:none>
+  <li>First Name = Sara</li>
+  <li>Last Name = Brown</li>
+  <li>E-mail = dog@gmail.com</li>
+  <li>Weight = 130</li>
+  <li>Experience = UPMC Hospital</li>
+  <li>Bio = Lived in Pittsburgh and studied at the University of pittsburgh</li>
+  </ul>
+</p>
+<p><font color=white size="+1"> <font size="5"> Here are your patients:</font></p>
+<p>
+  <ul style=list-style:none>
+  <li><a href=file:///Users/fransiscalarasati/Documents/POCKETDOCTOR/Google.webarchive>PATIENT 1</a></li>
+  <li><a href=file:///Users/fransiscalarasati/Documents/POCKETDOCTOR/Google.webarchive>PATIENT 2</a></li>
+  </ul>
+</p>	
+
+		</p>
+
+	</form>
+	<!-- form validation- display results of submission -->
+	<!-- 
+<h2> Results of your Submission: </h2>
+		<p> For "What is your reason for contacting us today?" you said: <span id="span0"> </span> </p>
+		<p> First Name: <span id="span1"> </span> </p>
+		<p> Last Name: <span id="span2"> </span> </p>
+		<p> Email: <span id="span3"> </span> </p>
+		<p> Telephone: <span id="span4"> </span> </p>
+		<p> How did you hear about us? <span id="c1"> </span> </p>
+		<p> Type of job you are inquiring about: <span id="span6"> </span> </p>
+		<p> If you chose "other", the type of job you are inquiring about is: <span id="span7"> </span> </p>
+		<p> Expansion of your submission: <span id="span8"> </span> </p>
+	</body>
+ -->
+ <!-- </body> -->
+	<footer>
+  <p align="center"><font size=-1 color="6B6B6B">We-Luminati Lights, Inc. &copy;2014<br />
+  Stephanie Viscovich, Aaron Pakzack, Christian Mazur, CEOs</font></p>
+</footer>
+</td>
+</tr>
+</table>
+</body>
+</html>
