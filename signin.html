@@ -31,25 +31,22 @@ body {
 	<input type="radio" name="usertype" id="Patient" value="Patient" /> Patient<br />
 	<input type="radio" name="usertype" id="Dietitian" value="Dietitian" /> Dietitian<br />
 	<input type="radio" name="usertype" id="Trainer" value="Trainer" /> Trainer<br />
-
+	
+	<button onclick="myFunction()"> Submit </button>
 	<script>
-			
-			var box = document.getElementsByName("usertype") ;
+		myFunction(){
 			if (box[0].checked == true) {
-				<a href= "patient home page.html" target="_blank">	
-				</a> 
+				window.open("patient home page.html","_blank")
 				}
 			else if (box[1].checked == true) {
-				<a href= "DIETITIANPROF.html" target="_blank">	
-				</a> 
+				window.open("DIETITIANPROF.html","_blank")
 				}
 			else if (box[2].checked == true) {
-				<a href= "TrainerProfile.html" target="_blank">	
-				</a>	
+				window.open("TrainerProfile.html","_blank")	
 			}
 	</script>
 <p>
-	<input type="button" value="Submit">
+
 	</h2>
 	</body>
 
