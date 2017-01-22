@@ -1,7 +1,7 @@
 <html>
 <title> Sign In </title>
 
-<h2 align = "center"> <font color = "blue"> Welcome to your Pocket Doctor! </h2>
+<h1 align = "center"> <font color = "blue"> Welcome to your Pocket Doctor! </h1>
 <style>
 body {
 	background-image: url("FITNESS.jpg");
@@ -10,7 +10,7 @@ body {
   
 <body>
 <p>
-	<b><font size="4">Welcome Back, Please Choose your Account Type:</font></b>
+	<b><font size="5">Welcome Back, Please Choose your Account Type:
 <p>
 <br />
 	<input type="checkbox" name="usertype" id="Patient" value="Patient" /> Patient<br />
@@ -23,6 +23,7 @@ body {
 	<input type="text" name="email" id="email" size="30" placeholder="email@example.com"maxlength="60" required />
 <p><font color="blue">*</font>Password:
 			<input type="password" name="password" id="password" size="30" placeholder="password"maxlength="60" required />
+	
 	<script>
 			var link = "";
 			var box = document.getElementsByName("usertype") ;
@@ -35,7 +36,10 @@ body {
 			if (box[2].checked == true) {
 				link = "TrainerProfile.html"						
 		}
+		
 	</script>
+		</font>
+		</b>
 	<a href= '" + link + "' target="_blank">	
 	<input type="button" value="Submit">
 	</a>
