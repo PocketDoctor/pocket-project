@@ -33,8 +33,9 @@ body {
 	<input type="radio" name="usertype" id="Trainer" value="Trainer" /> Trainer<br />
 	
 	<button onclick="myFunction()"> Submit </button>
-	<script type="text/javascript">
+	<script>
 		function myFunction(){
+				var box = document.getElementsByName("usertype");
 			if (box[0].checked == true) {
 				console.log('test1')
 				location.href="https://www.google.com/"
