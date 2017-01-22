@@ -17,38 +17,44 @@ body {
 <br>
 <br>
 <br>
-<h2 align = "center">Please Choose your Account Type:
-<p>
-<br />
-	<input type="radio" name="usertype" id="Patient" value="Patient" /> Patient<br />
-	<input type="radio" name="usertype" id="Dietitian" value="Dietitian" /> Dietitian<br />
-	<input type="radio" name="usertype" id="Trainer" value="Trainer" /> Trainer<br />
-
-<p>
+<h2 align = "center">
 	Please Enter your email and password:
 <p>*Email:
 	<input type="text" name="email" id="email" size="30" placeholder="email@example.com"maxlength="60" required />
 <p>*Password:
 			<input type="password" name="password" id="password" size="30" placeholder="password"maxlength="60" required />
 	
+	
+	<p>Please Choose your Account Type:
+<p>
+<br />
+	<input type="radio" name="usertype" id="Patient" value="Patient" /> Patient<br />
+	<input type="radio" name="usertype" id="Dietitian" value="Dietitian" /> Dietitian<br />
+	<input type="radio" name="usertype" id="Trainer" value="Trainer" /> Trainer<br />
+
 	<script>
 			var link = "";
 			var box = document.getElementsByName("usertype") ;
 			if (box[0].checked == true) {
-				link = "patient home page.html"
+				<a href= "patient home page.html" target="_blank">	
+				<input type="button" value="Submit">
+				</a>
 				}
 			if (box[1].checked == true) {
-				link = "DIETITIANPROF.html"		
+				<a href= "DIETITIANPROF.html" target="_blank">	
+				<input type="button" value="Submit">
+				</a>		
 				}
 			if (box[2].checked == true) {
-				link = "TrainerProfile.html"						
+				<a href= "TrainerProfile.html" target="_blank">	
+				<input type="button" value="Submit">
+				</a>						
 		}
 		
 	</script>
-	<p>	
-	<a href= '" + link + "' target="_blank">	
-	<input type="button" value="Submit">
-	</a>
+<p>
+	
+	
 	
 	</h2>
 	</body>
