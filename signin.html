@@ -34,24 +34,33 @@ body {
 
 	<script>
 			var link = "";
+			var num = 0; 
 			var box = document.getElementsByName("usertype") ;
 			if (box[0].checked == true) {
-				<a href= "patient home page.html" target="_blank">	
-				</a>
+				num = 0; 
 				}
 			if (box[1].checked == true) {
-				<a href= "DIETITIANPROF.html" target="_blank">	
-				</a>		
+				num = 1; 	
 				}
 			if (box[2].checked == true) {
-				<a href= "TrainerProfile.html" target="_blank">	
-				</a>						
-		}		
+				num = 2; 						
+			}		
 	</script>
 <p>
-	
-	
 	<input type="button" value="Submit">
+	if(number == 0){
+	<a href= "patient home page.html" target="_blank">	
+	</a>
+	}
+	if (number == 1){
+	<a href= "DIETITIANPROF.html" target="_blank">	
+	</a>
+	}
+	if (number == 2){
+	<a href= "TrainerProfile.html" target="_blank">	
+	</a>	
+	}
+	
 	</h2>
 	</body>
 
